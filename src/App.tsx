@@ -1,6 +1,7 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from "./components/login";
 //import Cadastro from "./components/cadastro";
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 function App() {

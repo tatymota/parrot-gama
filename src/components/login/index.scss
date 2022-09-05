@@ -28,15 +28,25 @@ body{
   max-width: 80%;
 }
 
-.botaoEntrar{
+.botao{
   margin: 20px;
   width: 235px;
   height: 39px;
   left: 359px;
   top: 465px;
-  background: #76bb4c;
+  background-color: #76bb4c;
   border-radius: 10px;
 }
+Button {
+  background-color: #76bb4c;
+}
 
+.input{
+  text-align: center;
+}
+
+.link{
+  color: black;
+}
 
 

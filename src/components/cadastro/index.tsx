@@ -17,22 +17,22 @@ function Cadastro() {
      </div>
       <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-         <Form.Control type="name" placeholder="nome" />
+         <Form.Control className='input' type="name" placeholder="nome" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-         <Form.Control type="email" placeholder="email" />
+         <Form.Control className='input' type="email" placeholder="email" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-         <Form.Control type="password" placeholder="senha" />
+         <Form.Control className='input' type="password" placeholder="senha" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-         <Form.Control type="password" placeholder="confirmar senha" />
+         <Form.Control className='input' type="password" placeholder="confirmar senha" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-         <Form.Control type="name" placeholder="unidade/apartamento" />
+         <Form.Control className='input' type="name" placeholder="unidade/apartamento" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-         <Form.Control type="link" placeholder="link da foto" />
+         <Form.Control className='input' type="link" placeholder="link da foto" />
       </Form.Group>
      </Form>
      <Button className='botaoEntrar'> entrar </Button>
