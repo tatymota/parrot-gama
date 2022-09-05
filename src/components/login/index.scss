@@ -1,0 +1,42 @@
+body{
+  background-image: url('../../assets/img/b.png');
+  justify-content: center;
+};
+
+.login{
+    color:black;
+    font-weight: 400;
+    padding-bottom: 30px;
+    font-size: 20px;
+    line-height: 25px;
+
+};
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid #C5C5C5 ;
+  width: 487px;
+  height: 642px;
+};
+
+
+.logo {
+  padding: 35px 35px 20px 40px;
+  max-width: 80%;
+}
+
+.botaoEntrar{
+  margin: 20px;
+  width: 235px;
+  height: 39px;
+  left: 359px;
+  top: 465px;
+  background: #76bb4c;
+  border-radius: 10px;
+}
+
+
+
