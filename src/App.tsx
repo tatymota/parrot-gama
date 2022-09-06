@@ -1,13 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Login from "./components/login";
-//import Cadastro from "./components/cadastro";
-
-
+import Routes from './Routes';
+//import Cadastro from './pages/cadastro';
+//import Login from "./pages/login";
 
 function App() {
   return (
     <div className="App">
-      <Login />
+      <Routes />
     </div>
   )
 }
