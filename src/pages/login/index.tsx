@@ -3,6 +3,7 @@ import Form from 'react-bootstrap/Form';
 import '../../assets/styles/global.scss';
 import './index.scss';
 import logo from '../../assets/img/logo-colorido.png';
+import { Link } from 'react-router-dom';
 
 
 function Login() {
@@ -26,7 +27,7 @@ function Login() {
       <Button className='botao'> Entrar </Button>
     </Form>
     <div>
-        <a className='link' href='#'>cadastre-se</a>
+        <Link className='link' to='/cadastro'>cadastre-se</Link>
       </div>
     </div>
 
