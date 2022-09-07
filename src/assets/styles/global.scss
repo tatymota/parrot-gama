@@ -6,5 +6,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Questrial, sans-serif;
-    background-size: cover;
+    background-size:cover;
+}
+body , input , textarea, button { 
+    font-family: 'Questrial', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
 }

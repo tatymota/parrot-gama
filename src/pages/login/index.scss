@@ -1,6 +1,11 @@
-body{
+.background{
+  display: flex;
   background-image: url('../../assets/img/b.png');
+  background-color: black;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
 };
 
 .login{
@@ -9,7 +14,6 @@ body{
   padding-bottom: 30px;
   font-size: 20px;
   line-height: 25px;
-
 };
 
 .container{
@@ -21,7 +25,6 @@ body{
   width: 487px;
   height: 642px;
 };
-
 
 .logo {
   padding: 35px 35px 20px 35px;
