@@ -3,7 +3,7 @@ import './index.scss';
 import { Header } from '../../components/header';
 
 
-function Feed() {
+function PerfilUsuario() {
   
   return (
     <div>
@@ -17,5 +17,4 @@ function Feed() {
   );
 }
       
-export default Feed;
-  
+export default PerfilUsuario;
