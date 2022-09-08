@@ -10,7 +10,7 @@ function Login() {
   
   return (
     <div className='background'>
-      <div className='container'>
+      <div className='formLogin'>
         <img className='logo' src={logo} alt="Logo" />
         <h2 className='login'>LOGIN</h2>
         <Form>

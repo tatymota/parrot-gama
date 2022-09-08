@@ -1,0 +1,43 @@
+.post {
+    background: var(--white);
+    padding: 2.5rem; 
+    border: 1px solid var(--gray-100);
+}
+
+.header {
+    display: flex;
+}
+
+.content {
+    line-height: 1.6;
+    color: var(--black);
+    margin-top: 1.5rem;
+}
+
+.content p {
+    margin-top: 1 rem;
+}
+
+.post > header time {
+    font-size: 0.875rem;
+    color: var(--gray-100);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.authorInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.25rem;
+}
+
+.authorInfo h1 {
+    font-weight: 400;
+    color: var(--green);
+    line-height: 1rem;
+    font-size: 1rem;
+}
+

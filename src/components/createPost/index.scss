@@ -1,0 +1,47 @@
+.publishForm {
+    width: 100%;
+    background: var(--white);
+    padding: 2.5rem; 
+    border: 1px solid var(--gray-100);
+    border-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.publishForm > div {
+    display: flex;
+}
+
+.publishForm textarea {
+    background: var(--white);
+    border: 1px solid var(--green);
+    border-radius: 10px;
+    resize: none;
+    width: 33.875rem;
+    height: 4.375rem;
+    margin-left: 1.75rem;
+} 
+
+// .postButton {
+//     display: flex;
+// }
+
+.postButton > button[type=submit] {
+    align-items: flex-end;
+    margin-top: 1rem;
+    background: var(--purple-500);
+    color: var(--white);
+    width: 10rem;
+    height: 1.75rem;
+    border-radius: 30px;
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+}
+
+.postButton> button[type=submit]:hover {
+    background: var(--purple-300);
+    color: var(--black);
+
+}
+

@@ -8,7 +8,7 @@ export default function RouteList(){
     return(
         <BrowserRouter>
             <Routes>
-                <Route path='/login' element={ <Login /> } />
+                <Route path='/' element={ <Login /> } />
                 <Route path='/cadastro' element={ <Cadastro /> } />
                 <Route path='/feed' element={ <Feed /> } />
                 <Route path='/perfilusuario' element={ <PerfilUsuario /> } />

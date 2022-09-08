@@ -14,14 +14,13 @@ function Cadastro() {
    const [unidade, setUnidade] = useState<string>("");
 
    useEffect(() => {
-      // setNome('Taty')
  
     },[]);
 
   return (
 
    <div className='background'>
-      <div className='container'>
+      <div className='formCadastro'>
          <img className='logo' src={logo} alt="Logo" />
          <h2 className='cadastro'>CADASTRO</h2>
          <Form>

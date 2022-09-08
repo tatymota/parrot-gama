@@ -5,5 +5,5 @@ const store = configureStore({
 }
 )
 
-export type RootStore = ReturnType<typeof store.getStaty>;
+export type RootStore = ReturnType<typeof store.getState>;
 export default store;

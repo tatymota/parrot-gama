@@ -28,6 +28,14 @@ interface infoInterface  {
   // const data : infoInterface[] = []  
 
 function PerfilUsuario() {
+//   const publishedDateFormatted = format(publishedAt, "d 'de' LLLL 'às' HH:mm'h'", {
+//     locale: ptBR,
+// });
+
+// const publishedDateRelativeToNow = formatDistanceToNow(publishedAt, {
+//     locale: ptBR,
+//     addSuffix: true,
+// });
 
   const [info, setInfo] = useState<infoInterface[]>([]); //useState é do tipo infoInterface criado lá em cima
 
@@ -45,7 +53,7 @@ function PerfilUsuario() {
             </div>
             <div className='rightBody'>
               <h4>{item.nome}</h4>
-              <h6>{item.data}</h6>
+              <h6>{item.data}</h6>  {/* Alterar para <time title={publishedDateFormatted} dateTime={publishedAt.toISOString()}>{publishedDateRelativeToNow}</time>  */}
               <p>{item.text}</p>
             </div>
           </div>
