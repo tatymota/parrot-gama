@@ -8,10 +8,6 @@ interface CadastroPayload {
     apartamento: string;
 }
 
-export function Cadastro(payload: CadastroPayload) {
+export function cadastro(payload: CadastroPayload) {
     return baseApi.post('/cadastro', payload)
 };
-
-export function listarUsarios() {
-    return baseApi.post('/cadastro');
-}

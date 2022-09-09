@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form';
 import '../../assets/styles/global.scss';
 import './index.scss';
 import logo from '../../assets/img/logo-colorido.png';
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 
 function Cadastro() {
   
@@ -13,28 +13,27 @@ function Cadastro() {
    const [confirmarSenha, setConfirmarSenha] = useState<string>("");
    const [unidade, setUnidade] = useState<string>("");
 
-   // const novoCadastro = async (event) => {
-   //    event.preventDefault();
+   const novoCadastro = async (event : FormEvent) => {
+      event.preventDefault();
       
-   //    const payload = {
-   //       nome,
-   //       email,
-   //       senha,
-   //       confirmarSenha,
-   //       unidade,
-   //    };
+      const payload = {
+         nome,
+         email,
+         senha,
+         confirmarSenha,
+         unidade,
+      };
 
-   //    try {
-   //       const response = await Cadastro(payload);
-   //    if(response.status !==201) {
-   //      return alert("Cadastro efetuado com sucesso :)")
-   //    }
-
-   //  } catch (error) {
-   //    return alert("Ops, algo deu errado")
-   //  }
-  
-   // }
+      try {
+         const response = await Cadastro(payload);
+      if(response.status !== 201) {
+        return alert("Ops, não deu certo :(")
+      }
+      alert("Cadastro efetuado com sucesso :)")
+    } catch (error) {
+      return alert("Ops, algo deu errado")
+    }
+   }
 
   return (
 
@@ -44,19 +43,19 @@ function Cadastro() {
          <h2 className='cadastro'>CADASTRO</h2>
          <Form>
          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Control className='input' type="text" placeholder="nome" value={nome} onChange={(text) => { setNome(text.target.value)}}/>
+            <Form.Control className='input' type="text" placeholder="nome" value={nome} onChange={(event) => { setNome(event.target.value)}}/>
          </Form.Group>
          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Control className='input' type="email" placeholder="email" value={email} onChange={(text) => { setEmail(text.target.value)}}/>
+            <Form.Control className='input' type="email" placeholder="email" value={email} onChange={(event) => { setEmail(event.target.value)}}/>
          </Form.Group>
          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Control className='input' type="password" placeholder="senha" value={senha} onChange={(text) => { setSenha(text.target.value)}} />
+            <Form.Control className='input' type="password" placeholder="senha" value={senha} onChange={(event) => { setSenha(event.target.value)}} />
          </Form.Group>
          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Control className='input' type="password" placeholder="confirmar senha" value={confirmarSenha} onChange={(text) => { setConfirmarSenha(text.target.value)}} />
+            <Form.Control className='input' type="password" placeholder="confirmar senha" value={confirmarSenha} onChange={(event) => { setConfirmarSenha(event.target.value)}} />
          </Form.Group>
          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Control className='input' type="text" placeholder="unidade/apartamento" value={unidade} onChange={(text) => { setUnidade(text.target.value)}}/>
+            <Form.Control className='input' type="text" placeholder="unidade/apartamento" value={unidade} onChange={(event) => { setUnidade(event.target.value)}}/>
          </Form.Group>
          <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Control className='input' type="text" placeholder="link da foto" />
