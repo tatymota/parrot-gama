@@ -17,9 +17,11 @@ React, Redux, Bootstrap, Axios, Sass/CSS
   npm install
   npm run dev
 ```
-    
 
 ## Authors
 
 - [@tatymota](https://github.com/tatymota)
 - [@shinkr99](https://github.com/shinkr99)
+
+## Backend
+https://github.com/Noronhakvothe/desafioex
