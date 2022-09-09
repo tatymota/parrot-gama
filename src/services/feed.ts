@@ -8,5 +8,5 @@ export function feed(payload: FeedPayload){
 };
 
 export function listarFeed() {
-    return baseApi.post("/feed");
+    return baseApi.get("/feed");
 }

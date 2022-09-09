@@ -13,27 +13,27 @@ function Cadastro() {
    const [confirmarSenha, setConfirmarSenha] = useState<string>("");
    const [unidade, setUnidade] = useState<string>("");
 
-   const novoCadastro = async (event : FormEvent) => {
-      event.preventDefault();
+   // const novoCadastro = async (event : FormEvent) => {
+   //    event.preventDefault();
       
-      const payload = {
-         nome,
-         email,
-         senha,
-         confirmarSenha,
-         unidade,
-      };
+   //    const payload = {
+   //       nome,
+   //       email,
+   //       senha,
+   //       confirmarSenha,
+   //       unidade,
+   //    };
 
-      try {
-         const response = await Cadastro(payload);
-      if(response.status !== 201) {
-        return alert("Ops, não deu certo :(")
-      }
-      alert("Cadastro efetuado com sucesso :)")
-    } catch (error) {
-      return alert("Ops, algo deu errado")
-    }
-   }
+   //    try {
+   //       const response = await Cadastro(payload);
+   //    if(response.status !== 201) {
+   //      return alert("Ops, não deu certo :(")
+   //    }
+   //    alert("Cadastro efetuado com sucesso :)")
+   //  } catch (error) {
+   //    return alert("Ops, algo deu errado")
+   //  }
+   // }
 
   return (
 

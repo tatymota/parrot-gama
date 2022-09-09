@@ -11,10 +11,6 @@ function Login() {
   const [email, setEmail] = useState<string>("");
   const [senha, setSenha] = useState<string>("");
 
-  useEffect(() => {
-
-  }, []);
-
   return (
     <div className='background'>
       <div className='formLogin'>
