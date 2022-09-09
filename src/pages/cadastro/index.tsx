@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form';
 import '../../assets/styles/global.scss';
 import './index.scss';
 import logo from '../../assets/img/logo-colorido.png';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 function Cadastro() {
   
@@ -13,9 +13,28 @@ function Cadastro() {
    const [confirmarSenha, setConfirmarSenha] = useState<string>("");
    const [unidade, setUnidade] = useState<string>("");
 
-   useEffect(() => {
- 
-    },[]);
+   // const novoCadastro = async (event) => {
+   //    event.preventDefault();
+      
+   //    const payload = {
+   //       nome,
+   //       email,
+   //       senha,
+   //       confirmarSenha,
+   //       unidade,
+   //    };
+
+   //    try {
+   //       const response = await Cadastro(payload);
+   //    if(response.status !==201) {
+   //      return alert("Cadastro efetuado com sucesso :)")
+   //    }
+
+   //  } catch (error) {
+   //    return alert("Ops, algo deu errado")
+   //  }
+  
+   // }
 
   return (
 

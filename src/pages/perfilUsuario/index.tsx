@@ -6,6 +6,7 @@ import { Header } from '../../components/header';
 import Usuario from '../../components/perfilUsuario';
 import profile from '../../assets/img/profile.png'
 import { Button } from 'react-bootstrap';
+import SemPost from '../../components/semPost'
 
 //criação de interface para definir o tipo de informação que virá carregado no useState
 interface infoInterface  {
@@ -15,14 +16,14 @@ interface infoInterface  {
 }
   //o data é do typointerface - vai conter tudo que minha interface disser (precisa ser alterado quando consumir a API)
   const data : infoInterface[] = [
-    {nome:'Taty', 
-    data:'00/00/0000 00:00', 
-    text:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate fugiat laboriosam, nisi magni sit quisquam ducimus doloribus dignissimos veniam maiores ipsa rem doloremque, ullam sapiente esse? Sequi dolorem quae velit!'
-    },
-    {nome:'Paulo', 
-    data:'00/00/0000 00:00', 
-    text:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate fugiat laboriosam, nisi magni sit quisquam ducimus doloribus dignissimos veniam maiores ipsa rem doloremque, ullam sapiente esse? Sequi dolorem quae velit!'
-    },
+    // {nome:'Taty', 
+    // data:'00/00/0000 00:00', 
+    // text:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate fugiat laboriosam, nisi magni sit quisquam ducimus doloribus dignissimos veniam maiores ipsa rem doloremque, ullam sapiente esse? Sequi dolorem quae velit!'
+    // },
+    // {nome:'Paulo', 
+    // data:'00/00/0000 00:00', 
+    // text:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate fugiat laboriosam, nisi magni sit quisquam ducimus doloribus dignissimos veniam maiores ipsa rem doloremque, ullam sapiente esse? Sequi dolorem quae velit!'
+    // },
   ]
 
   // const data : infoInterface[] = []  
@@ -74,7 +75,10 @@ function PerfilUsuario() {
         <main className='main'>
           <Usuario/>
           <ListGroup>
-            {info.length > 0 ? renderItem() : (<ListGroup.Item><div>teste</div></ListGroup.Item>)}
+            {info.length > 0 ? renderItem() : (
+            <ListGroup.Item>
+              <SemPost />
+            </ListGroup.Item>)}
           </ListGroup>
         </main>
     </div>

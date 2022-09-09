@@ -9,9 +9,13 @@
 .body{
     display: flex;
     flex-direction: row;
+    width: 43.75rem;
    
 }
 .leftBody{
+    display:flex;
+    align-items: center;
+    margin-right: 1.875rem;
     flex: 1;
 }
 

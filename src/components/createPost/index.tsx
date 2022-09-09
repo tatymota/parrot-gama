@@ -1,4 +1,4 @@
-import { FormEvent, useState } from 'react';
+import { FormEvent, useEffect, useState } from 'react';
 import { Avatar } from '../avatar';
 
 import './index.scss';
@@ -9,10 +9,11 @@ import './index.scss';
 // };
 // { author }: AuthorProps adicionar dentro do createPost como parametro
 export function CreatePost() {
-    // const [newPost, setNewPost] = useState([
-    //     1,
-    //     2,
-    // ])
+    const [newPost, setNewPost] = useState<string>("");
+
+    useEffect(() => {
+
+    }, []); 
 
     // function handleCreateNewPost(event: FormEvent) {
     //     event.preventDefault();

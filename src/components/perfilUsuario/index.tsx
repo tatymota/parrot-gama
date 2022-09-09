@@ -17,11 +17,11 @@ export default function Usuario() {
           <h2>Nome Sobrenome</h2>
           <p>apê 222</p>
           <p>user@email.com</p>
-          <>0 publicações</>
+          <p><span>00</span> publicações</p>
         </div>
         <div className="px-4">
           <Button className="buttonProfile" type="submit">
-            editar perfil
+            editar
           </Button>
         </div>
       </div>
